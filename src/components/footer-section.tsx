@@ -13,7 +13,7 @@ export function FooterSection() {
     >
       <div className="max-w-3xl mx-auto flex justify-between items-center text-sm text-muted">
         <a href="https://github.com/OSSAIManifesto/manifesto" className="hover:text-foreground transition-colors">Open Source</a>
-        <span>Made with ♥ by <a href="https://wundergraph.com" className="hover:text-foreground transition-colors underline decoration-muted/50">WunderGraph</a></span>
+        <span>Made with intent by <a href="https://wundergraph.com" className="hover:text-foreground transition-colors underline decoration-muted/50">WunderGraph</a></span>
         <span>&copy; {new Date().getFullYear()}</span>
       </div>
     </motion.footer>
