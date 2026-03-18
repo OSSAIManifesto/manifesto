@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="28" viewBox="0 0 120 28" role="img" aria-label="Human OSS">
+  <title>Human OSS</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#0e0e0e"/>
+    </linearGradient>
+  </defs>
+  <!-- Background pill -->
+  <rect width="120" height="28" rx="14" fill="url(#bg)"/>
+  <!-- Subtle border -->
+  <rect x="0.5" y="0.5" width="119" height="27" rx="13.5" fill="none" stroke="#2a2a2a" stroke-width="1"/>
+  <!-- Gradient diamond mark -->
+  <rect x="10" y="9" width="10" height="10" rx="2.5" fill="url(#g)" transform="rotate(45 15 14)"/>
+  <!-- Text -->
+  <text x="71" y="14" dominant-baseline="central" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="11.5" font-weight="500" letter-spacing="0.3" fill="#e5e5e5">Human OSS</text>
+</svg>
