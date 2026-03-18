@@ -27,26 +27,6 @@ Show that your project stands behind responsible AI use in open source:
 [![Open Source AI Manifesto](https://human-oss.dev/badge-light.svg)](https://human-oss.dev)
 ```
 
-## Development
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view the site locally.
-
-## Tech Stack
-
-- [Next.js](https://nextjs.org) (App Router)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Motion](https://motion.dev) (animations)
-- TypeScript
-
-## Contributing
-
-This manifesto belongs to the community. Open an issue or submit a pull request to propose changes to the principles, improve the site, or add new badge formats.
-
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
