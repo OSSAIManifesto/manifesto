@@ -6,6 +6,9 @@
 
 AI has changed how we write code, but open source remains a human system built on trust, accountability, and shared stewardship. This manifesto defines principles for the responsible use of AI in open source communities.
 
+> [!NOTE]
+> This is an initiative started by [WunderGraph](https://wundergraph.com).
+
 Live at [human-oss.dev](https://human-oss.dev)
 
 ## Add the Badge
