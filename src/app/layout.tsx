@@ -18,6 +18,14 @@ export const metadata: Metadata = {
   title: "The Open Source AI Manifesto",
   description:
     "Principles for sustaining open source in the age of generative AI",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "16x16 32x32" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
   openGraph: {
     title: "The Open Source AI Manifesto",
     description:
