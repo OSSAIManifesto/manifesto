@@ -18,16 +18,12 @@ function PrincipleCard({
 
   return (
     <motion.article
-      className="principle-card group relative overflow-hidden rounded-2xl border border-surface-border bg-surface p-8 md:p-12 lg:p-14 transition-all duration-500"
+      className="principle-card group relative overflow-hidden rounded-2xl border border-surface-border bg-surface p-8 md:p-12 lg:p-14 transition-colors duration-500 hover:border-accent/[0.12] hover:bg-white/5 will-change-transform"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-      whileHover={{
-        y: -3,
-        borderColor: "rgba(245,158,11,0.12)",
-        backgroundColor: "rgba(255,255,255,0.05)",
-      }}
+      whileHover={{ y: -3 }}
     >
       {/* Top accent line — visible on hover */}
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent-light to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

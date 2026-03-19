@@ -8,7 +8,7 @@ type Snippet = {
   light: string;
 };
 
-function CopyButton({ text }: { text: string }) {
+function CopyableSnippet({ text }: { text: string }) {
   const [copied, setCopied] = useState(false);
 
   function handleCopy() {
@@ -21,9 +21,16 @@ function CopyButton({ text }: { text: string }) {
   return (
     <button
       onClick={handleCopy}
-      className="absolute top-3 right-3 text-xs px-2 py-1 rounded-md bg-surface border border-surface-border text-muted hover:text-foreground hover:brightness-125 active:scale-95 transition-all duration-200 cursor-pointer"
+      className="group relative w-full block text-left cursor-pointer"
     >
-      {copied ? "Copied!" : "Copy"}
+      <pre className="p-4 pr-20 rounded-xl border border-surface-border bg-surface text-sm overflow-x-auto transition-colors duration-200 group-hover:border-accent/30">
+        <code className="text-accent-light break-all whitespace-pre-wrap">
+          {text}
+        </code>
+      </pre>
+      <span className="absolute top-3 right-3 text-xs px-2 py-1 rounded-md bg-surface border border-surface-border text-muted transition-all duration-200 group-hover:text-foreground group-hover:brightness-125 group-active:scale-95">
+        {copied ? "Copied!" : "Copy"}
+      </span>
     </button>
   );
 }
@@ -83,16 +90,9 @@ export function BadgePreview({
           {Object.values(snippets).map((snippet) => (
             <div key={snippet.label} className="space-y-2">
               <h3 className="text-lg font-medium">{snippet.label}</h3>
-              <div className="relative">
-                <pre className="p-4 pr-20 rounded-xl border border-surface-border bg-surface text-sm overflow-x-auto">
-                  <code className="text-accent-light break-all whitespace-pre-wrap">
-                    {variant === "dark" ? snippet.dark : snippet.light}
-                  </code>
-                </pre>
-                <CopyButton
-                  text={variant === "dark" ? snippet.dark : snippet.light}
-                />
-              </div>
+              <CopyableSnippet
+                text={variant === "dark" ? snippet.dark : snippet.light}
+              />
             </div>
           ))}
         </div>
