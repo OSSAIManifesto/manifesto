@@ -14,24 +14,55 @@ const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://human-oss.dev";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "The Open Source AI Manifesto",
   description:
     "Principles for sustaining open source in the age of generative AI",
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon.ico", sizes: "16x16 32x32" },
     ],
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "The Open Source AI Manifesto",
     description:
       "Principles for sustaining open source in the age of generative AI",
+    url: SITE_URL,
+    siteName: "The Open Source AI Manifesto",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "The Open Source AI Manifesto — Principles for sustaining open source in the age of generative AI",
+      },
+    ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Open Source AI Manifesto",
+    description:
+      "Principles for sustaining open source in the age of generative AI",
+    images: ["/og-image.png"],
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "The Open Source AI Manifesto",
+  url: SITE_URL,
+  description:
+    "Principles for sustaining open source in the age of generative AI",
 };
 
 export default function RootLayout({
@@ -41,6 +72,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${inter.variable} ${instrumentSerif.variable} antialiased`}
       >

@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Badge — The Open Source AI Manifesto",
   description:
     "Add the Open Source AI Manifesto badge to your repository to signal your commitment to responsible AI use in open source.",
+  alternates: {
+    canonical: "/badge",
+  },
 };
 
 const SITE_URL = "https://human-oss.dev";
