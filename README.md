@@ -13,7 +13,13 @@ Live at [human-oss.dev](https://human-oss.dev)
 
 ## Add the Badge
 
-Show that your project stands behind responsible AI use in open source:
+Show that your project stands behind responsible AI use in open source.
+
+> **Tip:** You can also reference the manifesto in your [pull request template](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository) to remind contributors at review time:
+>
+> ```markdown
+> - [ ] This PR follows the [Open Source AI Manifesto](https://human-oss.dev)
+> ```
 
 | Dark | Light |
 |------|-------|
