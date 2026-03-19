@@ -42,7 +42,17 @@ export function BadgeCtaSection() {
           className="mt-4 text-lg md:text-xl text-muted max-w-xl mx-auto leading-relaxed"
         >
           Add the badge to your README and let contributors know your project
-          stands behind responsible AI use in open source.
+          stands behind responsible AI use in open source. You can also add a
+          checklist item to your{" "}
+          <a
+            href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent-light hover:underline"
+          >
+            PR template
+          </a>{" "}
+          to remind contributors at review time.
         </p>
 
         {/* Badge showcase — clickable to select variant */}

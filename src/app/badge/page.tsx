@@ -36,7 +36,17 @@ export default function BadgePage() {
         </h1>
         <p className="mt-6 text-lg md:text-xl text-muted leading-relaxed">
           Add the manifesto badge to your repository README to signal your
-          commitment to responsible AI use in open source.
+          commitment to responsible AI use in open source. You can also
+          reference it in your{" "}
+          <a
+            href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent-light hover:underline"
+          >
+            pull request template
+          </a>{" "}
+          so every contributor sees it at review time.
         </p>
 
         {/* Preview & Snippets — variant toggle controls both */}
