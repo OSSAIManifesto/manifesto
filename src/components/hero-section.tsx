@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { AsciiRain } from "./ascii-rain";
+import { BrandSlider } from "./brand-slider";
 
 const titleWords = "The Open Source AI Manifesto".split(" ");
 
@@ -29,9 +30,12 @@ const wordVariants = {
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden flex flex-col items-center justify-center min-h-screen px-6 text-center">
+    <section className="relative overflow-hidden flex flex-col items-center min-h-screen px-6 text-center">
       {/* ASCII Rain */}
       <AsciiRain />
+
+      {/* Spacer to push content to center */}
+      <div className="flex-1" />
 
       {/* Glow */}
       <motion.div
@@ -102,6 +106,14 @@ export function HeroSection() {
           <path d="M12 5v14M5 12l7 7 7-7" />
         </svg>
       </motion.div>
+
+      {/* Spacer to push slider to bottom */}
+      <div className="flex-1" />
+
+      {/* Brand slider at bottom */}
+      <div className="relative z-10 w-screen">
+        <BrandSlider />
+      </div>
     </section>
   );
 }

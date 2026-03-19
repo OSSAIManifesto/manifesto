@@ -33,6 +33,20 @@ Show that your project stands behind responsible AI use in open source.
 [![Open Source AI Manifesto](https://human-oss.dev/badge-light.svg)](https://human-oss.dev)
 ```
 
+## Show Your Support
+
+Get your company or project featured on the manifesto homepage. Just open a PR:
+
+1. Add your logo (PNG, white on transparent, ideally 200px+ wide) to `public/brands/`
+2. Add an entry to `src/data/brands.json`:
+   ```json
+   {
+     "name": "Your Company",
+     "logo": "your-company.png"
+   }
+   ```
+3. Open a pull request — or use the [quick edit link](https://github.com/OSSAIManifesto/manifesto/edit/main/src/data/brands.json) to do it directly from GitHub.
+
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
