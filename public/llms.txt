@@ -1,0 +1,63 @@
+# The Open Source AI Manifesto
+
+> Principles for sustaining open source in the age of generative AI.
+
+AI has changed how we write code, but open source remains a human system built on trust, accountability, and shared stewardship. These principles guide the responsible use of AI in open source communities.
+
+This is an initiative started by [WunderGraph](https://wundergraph.com).
+
+## Principles
+
+### 01 — Own Your Commit
+
+Every contribution carries your name. Take the time to understand the intent, verify the correctness, and stand behind the outcome of what you submit. Accountability for the codebase is a human responsibility that cannot be delegated to a model.
+
+### 02 — Prove Your Work
+
+Code that merely compiles is not code that is proven safe. Every change requires evidence proportional to its risk. Whether AI helped you write it or not, always provide tests, reproduction steps, and security checks.
+
+### 03 — Respect Reviewer Time
+
+Every pull request costs human attention, which is the scarcest resource in open source. Just because AI allows you to generate code quickly does not mean you should submit it all at once. Prioritize quality over quantity to make every submission worth a maintainer's time.
+
+### 04 — Document the Intent
+
+Because AI can scale code output faster than human attention can process it, you need to compensate with clear artifacts. Write meaningful commit messages, provide architecture notes, and map out your logic. The more code you generate, the more context you owe the community.
+
+### 05 — Speak Authentically
+
+While AI is a great tool for drafting code, every issue, comment, and code review should be written in your own voice. Do not let a model handle your community interactions. Trust, collaboration, and resolving disputes require real human connection.
+
+### 06 — Honor the Ecosystem
+
+AI models are built on the historical work of the open-source community. Be mindful of licensing boundaries and avoid blindly copying large, opaque blocks of generated code that might infringe on the rights of others. Respect the origins of the code you contribute.
+
+---
+
+## Add the Badge
+
+Show that your project stands behind responsible AI use in open source:
+
+Dark mode:
+```markdown
+[![Open Source AI Manifesto](https://human-oss.dev/badge.svg)](https://human-oss.dev)
+```
+
+Light mode:
+```markdown
+[![Open Source AI Manifesto](https://human-oss.dev/badge-light.svg)](https://human-oss.dev)
+```
+
+## PR Template
+
+Add a checkbox to your [pull request template](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository) to remind contributors at review time:
+
+```markdown
+- [ ] This PR follows the [Open Source AI Manifesto](https://human-oss.dev)
+```
+
+## Links
+
+- Website: https://human-oss.dev
+- GitHub: https://github.com/OSSAIManifesto/manifesto
+- License: MIT
