@@ -74,8 +74,8 @@ export function BadgeCtaSection() {
               <img
                 src="/badge.svg"
                 alt="Open Source AI Manifesto badge — dark variant"
-                width={120}
-                height={28}
+                width={94}
+                height={20}
               />
             </div>
             <span
@@ -102,8 +102,8 @@ export function BadgeCtaSection() {
               <img
                 src="/badge-light.svg"
                 alt="Open Source AI Manifesto badge — light variant"
-                width={120}
-                height={28}
+                width={94}
+                height={20}
               />
             </div>
             <span
@@ -120,14 +120,14 @@ export function BadgeCtaSection() {
         <div className="mt-10">
           <button
             onClick={handleCopy}
-            className="group relative w-full max-w-2xl mx-auto block text-left"
+            className="group relative w-full max-w-2xl mx-auto block text-left cursor-pointer"
           >
-            <pre className="p-4 rounded-xl border border-surface-border bg-surface text-sm overflow-x-auto transition-colors duration-200 group-hover:border-accent/30">
+            <pre className="p-4 pr-20 rounded-xl border border-surface-border bg-surface text-sm overflow-x-auto transition-colors duration-200 group-hover:border-accent/30">
               <code className="text-accent-light break-all whitespace-pre-wrap">
                 {snippet}
               </code>
             </pre>
-            <span className="absolute top-3 right-3 text-xs px-2 py-1 rounded-md bg-white/5 text-muted transition-colors duration-200 group-hover:text-foreground">
+            <span className="absolute top-3 right-3 text-xs px-2 py-1 rounded-md bg-surface border border-surface-border text-muted transition-all duration-200 group-hover:text-foreground group-hover:brightness-125 group-active:scale-95">
               {copied ? "Copied!" : "Copy"}
             </span>
           </button>

@@ -21,7 +21,7 @@ function CopyButton({ text }: { text: string }) {
   return (
     <button
       onClick={handleCopy}
-      className="absolute top-3 right-3 text-xs px-2 py-1 rounded-md bg-white/5 text-muted hover:text-foreground transition-colors duration-200"
+      className="absolute top-3 right-3 text-xs px-2 py-1 rounded-md bg-surface border border-surface-border text-muted hover:text-foreground hover:brightness-125 active:scale-95 transition-all duration-200 cursor-pointer"
     >
       {copied ? "Copied!" : "Copy"}
     </button>
@@ -72,8 +72,8 @@ export function BadgePreview({
         <img
           src={variant === "dark" ? "/badge.svg" : "/badge-light.svg"}
           alt="Open Source AI Manifesto badge"
-          width={120}
-          height={28}
+          width={94}
+          height={20}
         />
       </div>
 
@@ -84,7 +84,7 @@ export function BadgePreview({
             <div key={snippet.label} className="space-y-2">
               <h3 className="text-lg font-medium">{snippet.label}</h3>
               <div className="relative">
-                <pre className="p-4 rounded-xl border border-surface-border bg-surface text-sm overflow-x-auto">
+                <pre className="p-4 pr-20 rounded-xl border border-surface-border bg-surface text-sm overflow-x-auto">
                   <code className="text-accent-light break-all whitespace-pre-wrap">
                     {variant === "dark" ? snippet.dark : snippet.light}
                   </code>
