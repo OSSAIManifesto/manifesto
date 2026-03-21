@@ -4,21 +4,29 @@ import { motion } from "motion/react";
 import brands from "@/data/brands.json";
 
 function BrandLogo({ brand }: { brand: (typeof brands)[number] }) {
-  return (
-    <span className="flex items-center select-none whitespace-nowrap px-6 opacity-60 hover:opacity-100 transition-opacity">
-      {brand.logo ? (
-        <img
-          src={`/brands/${brand.logo}`}
-          alt={brand.name}
-          className="h-8 max-w-[150px] object-contain grayscale"
-        />
-      ) : (
-        <span className="font-mono text-lg text-foreground">
-          {brand.name}
-        </span>
-      )}
+  const content = brand.logo ? (
+    <img
+      src={`/brands/${brand.logo}`}
+      alt={brand.name}
+      className="h-8 max-w-[150px] object-contain grayscale"
+    />
+  ) : (
+    <span className="font-mono text-lg text-foreground">
+      {brand.name}
     </span>
   );
+
+  const className = "flex items-center select-none whitespace-nowrap px-3 opacity-60 hover:opacity-100 transition-opacity";
+
+  if (brand.url) {
+    return (
+      <a href={brand.url} target="_blank" rel="noopener noreferrer" className={className}>
+        {content}
+      </a>
+    );
+  }
+
+  return <span className={className}>{content}</span>;
 }
 
 export function BrandSlider() {

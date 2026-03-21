@@ -1,6 +1,12 @@
 [
   {
     "name": "WunderGraph",
-    "logo": "wundergraph.png"
+    "logo": "wundergraph.png",
+    "url": "https://wundergraph.com"
+  },
+  {
+    "name": "Platformatic",
+    "logo": "platformatic.png",
+    "url": "https://platformatic.dev"
   }
 ]
